@@ -48,6 +48,27 @@ class Chart:
             total += el.value
         return total
 
+    #get the names used by the slices
+    def get_colors(self) -> list:
+        nams = []
+        for el in self.elements:
+            nams.append(el.name)
+        return nams
+
+    #get the values used by the slices
+    def get_colors(self) -> list:
+        vals = []
+        for el in self.elements:
+            vals.append(el.value)
+        return vals
+
+    #get the colors used by the slices
+    def get_colors(self) -> list:
+        cols = []
+        for el in self.elements:
+            cols.append(el.color)
+        return cols
+
     #draws to a file with a few options
     def draw_to_file(self, fil: str = "pie.svg", size: int = 200, stroke: str = "", stroke_width: float = "") -> None:
         with open(fil, 'w') as pie:
@@ -79,4 +100,3 @@ class Chart:
                 last_y = new_y
 
             pie.write('</g></svg>')
-
