@@ -72,7 +72,7 @@ class Chart:
                                                                                                  last_x, last_y, 
                                                                                                  size * 1/3, size * 1/3, 1 if theta - last_theta > pi else 0, new_x, new_y,
                                                                                                  size/2, size/2,
-                                                                                                 el.color, stroke, str(stroke_width) + ("px" if len(stroke_width) > 0 else "")))
+                                                                                                 el.color, stroke, str(stroke_width) + ("px" if len(str(stroke_width)) > 0 else "")))
 
                 last_theta = theta
                 last_x = new_x
