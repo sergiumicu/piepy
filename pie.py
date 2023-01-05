@@ -49,14 +49,14 @@ class Chart:
         return total
 
     #get the names used by the slices
-    def get_colors(self) -> list:
+    def get_names(self) -> list:
         nams = []
         for el in self.elements:
             nams.append(el.name)
         return nams
 
     #get the values used by the slices
-    def get_colors(self) -> list:
+    def get_values(self) -> list:
         vals = []
         for el in self.elements:
             vals.append(el.value)
